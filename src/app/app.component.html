@@ -13,12 +13,12 @@
           <div>
             <textarea
               class="form-control mb-2"
-              id="message"
+              [formControl]="promotField"
               rows="3"
               appAutoComplete
               required
             ></textarea>
-            <button class="btn btn-outline-primary">Add promot</button>
+            <button class="btn btn-outline-primary" (click)="addKeyword()">Add promot</button>
           </div>
         </div>
       </div>
